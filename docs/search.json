@@ -4,21 +4,21 @@
     "href": "proposal.html",
     "title": "Proposal",
     "section": "",
-    "text": "State your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate…"
+    "text": "As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism?\nState your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate…"
   },
   {
     "objectID": "proposal.html#research-question",
     "href": "proposal.html#research-question",
     "title": "Proposal",
     "section": "",
-    "text": "State your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate…"
+    "text": "As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism?\nState your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate…"
   },
   {
     "objectID": "proposal.html#datasets",
     "href": "proposal.html#datasets",
     "title": "Proposal",
     "section": "2 Dataset(s)",
-    "text": "2 Dataset(s)\n\nSource:\nSample size:\nKey variables:\nLicense/usage notes:"
+    "text": "2 Dataset(s)\n\nSource: GSE135251 (GEO)\nSample size:216 patients\nKey variables: Early - fibrosis (F0–F1) - Advanced fibrosis (F3–F4)\nLicense/usage notes:"
   },
   {
     "objectID": "proposal.html#planned-analysis",

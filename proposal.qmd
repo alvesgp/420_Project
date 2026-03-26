@@ -3,13 +3,18 @@ title: "Proposal"
 ---
 
 ## Research question
+As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism?
+
 State your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and
 environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate...
 
 ## Dataset(s)
-- Source:
-- Sample size:
-- Key variables:
+- Source: GSE135251 (GEO)
+- Sample size:216 patients
+- Key variables: Early 
+        - fibrosis (F0–F1)
+        - Advanced fibrosis (F3–F4)
+
 - License/usage notes:
 
 ## Planned analysis

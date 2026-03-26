@@ -3,10 +3,10 @@ title: "Team"
 ---
 
 ## Members
-- Giovanna Alves — role (data cleaning, EDA, modeling, writing)
-- Prakriti Dhungana — role
-- Adeline John — role
-- Kyubin Oh — role
+- Giovanna Alves — data cleaning, EDA, modeling, writing
+- Prakriti Dhungana — writing, researcher, editor
+- Adeline John — writing, researcher, editor 
+- Kyubin Oh — writing, researcher, editor
 
 ## Collaboration rules (simple)
 - Pull before you start work.
