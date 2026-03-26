@@ -3,10 +3,10 @@ title: "Team"
 ---
 
 ## Members
-- Name 1 — role (data cleaning, EDA, modeling, writing)
-- Name 2 — role
-- Name 3 — role
-- Name 4 — role
+- Giovanna Alves — role (data cleaning, EDA, modeling, writing)
+- Prakriti Dhungana — role
+- Adeline John — role
+- Kyubin Oh — role
 
 ## Collaboration rules (simple)
 - Pull before you start work.

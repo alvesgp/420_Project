@@ -1,9 +1,13 @@
 ---
-title: "Project Title"
+title: "Non Alcoholic Fatty Liveer Disease & Fibrosis Transcriptomics"
 subtitle: "BNFO 420 Capstone"
 ---
 
 ## One-paragraph summary
+As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism?
+For our project we will be using GSE135251 as our dataset. This dataset comes from human liver biopsies and contains RNA sequence raw counts data. The sample size is 216.
+We will use DESeq2 for differential expression analysis and clusterProfiler for pathway analysis. Our deliverables include PCA plots, Volcano plot, Heatmaps, and Gene Annotation plot. 
+
 Write 4–6 sentences describing:
 - the problem or question
 - the dataset(s)
