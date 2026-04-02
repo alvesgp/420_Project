@@ -9,9 +9,8 @@ Add bullet points as you go.
 Add figures as you generate them. Example:
 
 ```{r}
-![]("figures/PCA Liver.png")
-no
 # If using R, put code here (optional)
 
 # If using Python, put code here (optional)
+test
 
