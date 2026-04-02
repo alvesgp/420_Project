@@ -53,21 +53,21 @@
     "href": "results.html#figures",
     "title": "Results",
     "section": "0.2 Figures",
-    "text": "0.2 Figures\nAdd figures as you generate them. Example:"
+    "text": "0.2 Figures\nAdd figures as you generate them. Example:\n # If using R, put code here (optional)"
   },
   {
     "objectID": "team.html",
     "href": "team.html",
     "title": "Team",
     "section": "",
-    "text": "Giovanna Alves — role (data cleaning, EDA, modeling, writing)\nPrakriti Dhungana — role\nAdeline John — role\nKyubin Oh — role"
+    "text": "Giovanna Alves — data cleaning, EDA, modeling, writing\nPrakriti Dhungana — writing, researcher, editor\nAdeline John — writing, researcher, editor\nKyubin Oh — writing, researcher, editor"
   },
   {
     "objectID": "team.html#members",
     "href": "team.html#members",
     "title": "Team",
     "section": "",
-    "text": "Giovanna Alves — role (data cleaning, EDA, modeling, writing)\nPrakriti Dhungana — role\nAdeline John — role\nKyubin Oh — role"
+    "text": "Giovanna Alves — data cleaning, EDA, modeling, writing\nPrakriti Dhungana — writing, researcher, editor\nAdeline John — writing, researcher, editor\nKyubin Oh — writing, researcher, editor"
   },
   {
     "objectID": "team.html#collaboration-rules-simple",
