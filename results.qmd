@@ -9,6 +9,8 @@ Add bullet points as you go.
 Add figures as you generate them. Example:
 
 ![](figures/PCA%20Liver.png)
+![](figures/Volcano%20Plot.png)
+![](figures/Heatmap.png)
 
 ```{r}
 # If using R, put code here (optional)
