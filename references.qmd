@@ -1,0 +1,6 @@
+---
+title: "References"
+nocite: "@*"
+---
+
+All bibliography entries from `references.bib` are listed below.
