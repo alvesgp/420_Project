@@ -5,7 +5,7 @@ subtitle: "BNFO 420 Capstone"
 
 ## Abstract 
 Non Alcoholic Liver Disease(NAFLD) is a condition where fat is accumulated in the
-liver. This disease can cause inflammation, fibrosis, and corrhosis. Fibrosis is 
+liver. This disease can cause inflammation, fibrosis, and cirrhosis. Fibrosis is 
 characterized by excessive deposition of extracellular matrix (ECM) components, 
 leading to structural and functional disruption of liver tissue. Understanding 
 the molecular mechanisms underlying fibrosis progression is critical for identifying
@@ -13,12 +13,16 @@ therapeutic targets and biomarkers of disease severity. In this study, we analyz
 RNA-sequence data from the GSE135251 dataset. This dataset consists of liver biopsy 
 samples from 216 human patients, classified as control, early, and moderate. We 
 hypothesized that as fibrosis stages increases, expression of genes related to 
-extracellular matrix organization would be increased. To test our hypothesis, the 
+extracellular matrix organization would be increased. To test this hypothesis, the 
 raw counts data was processed using DESeq2 to identify differentially expressed genes 
-between the fibrosis stages. Principal component analysis(PCA) was used to display 
-global Transcriptomic differences and differential expression results were visualized 
-using a volcano plot and heatmap of top significant genes. Gene ontologu enrichment analysis
+between early and moderate fibrosis. Principal component analysis(PCA) was used to asses 
+global Transcriptomic differences accross the samples. Differential expression results were visualized 
+using a volcano plot and heatmap of top significant genes. Gene Ontology(GO) enrichment analysis
 was performedd using clusterProfiler to identify overrepresented biological processes.
+Our analysis reaveled distinct transcriptomic differences between control and fibrosis samples, with 
+more subtle differences found between early and moderate stages. Pathway enrichment analysis revealeled 
+significant upregulation of genes associated with extracellular matrix organization in moderate fibrosis. 
+These findings support the hypothesis that fibrosis progression is 
 
 
 ## Introduction

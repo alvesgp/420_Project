@@ -11,9 +11,10 @@ Add figures as you generate them. Example:
 ![](figures/PCA%20Liver.png)
 ![](figures/Volcano%20Plot.png)
 ![](figures/Heatmap.png)
-![](figures/Top%2050%20Significant%20Genes%20Up%20and%20Down%20regulated.png)
 ![](figures/top50_downregulated.png)
 ![](figures/top50_upregulated.png)
+![](figures/Upregulated%20Pathways.png)
+![](figures/Downregulated%20Pathways.png)
 
 
 ```{r}
