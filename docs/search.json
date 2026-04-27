@@ -58,9 +58,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Non Alcoholic Fatty Liveer Disease & Fibrosis Transcriptomics",
+    "title": "Non Alcoholic Fatty Liver Disease & Fibrosis Transcriptomics",
     "section": "",
-    "text": "As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism? For our project we will be using GSE135251 as our dataset. This dataset comes from human liver biopsies and contains RNA sequence raw counts data. The sample size is 216. We will use DESeq2 for differential expression analysis and clusterProfiler for pathway analysis. Our deliverables include PCA plots, Volcano plot, Heatmaps, and Gene Annotation plot.\nWrite 4–6 sentences describing: - the problem or question - the dataset(s) - your approach (methods) - what you will deliver (figures, model, dashboard, etc.)"
+    "text": "Non Alcoholic Liver Disease(NAFLD) is a condition where fat is accumulated in the liver. This disease can cause inflammation, fibrosis, and corrhosis. Fibrosis is characterized by excessive deposition of extracellular matrix (ECM) components, leading to structural and functional disruption of liver tissue. Understanding the molecular mechanisms underlying fibrosis progression is critical for identifying therapeutic targets and biomarkers of disease severity. In this study, we analyzed RNA-sequence data from the GSE135251 dataset. This dataset consists of liver biopsy samples from 216 human patients, classified as control, early, and moderate. We hypothesized that as fibrosis stages increases, expression of genes related to extracellular matrix organization would be increased. To test our hypothesis, the raw counts data was processed using DESeq2 to identify differentially expressed genes between the fibrosis stages. Principal component analysis(PCA) was used to display global Transcriptomic differences and differential expression results were visualized using a volcano plot and heatmap of top significant genes. Gene ontologu enrichment analysis was performedd using clusterProfiler to identify overrepresented biological processes."
   },
   {
     "objectID": "index.html#one-paragraph-summary",
@@ -72,16 +72,16 @@
   {
     "objectID": "index.html#project-roadmap-living",
     "href": "index.html#project-roadmap-living",
-    "title": "Non Alcoholic Fatty Liveer Disease & Fibrosis Transcriptomics",
-    "section": "2 Project roadmap (living)",
-    "text": "2 Project roadmap (living)\n\nFind dataset(s)\nDefine outcome + predictors / variables\nExploratory analysis + QC\nMethod 1 (required)\nMethod 2 (optional/extension)\nFinal figures + interpretation\nLimitations + ethics + reproducibility notes"
+    "title": "Non Alcoholic Fatty Liver Disease & Fibrosis Transcriptomics",
+    "section": "3 Project roadmap (living)",
+    "text": "3 Project roadmap (living)\n\nOur dataset: GEO GSE135251\nDefine outcome + predictors / variables\nExploratory analysis + QC\nMethod 1 (required)\nMethod 2 (optional/extension)\nFinal figures + interpretation\nLimitations + ethics + reproducibility notes"
   },
   {
     "objectID": "index.html#where-to-find-things",
     "href": "index.html#where-to-find-things",
-    "title": "Non Alcoholic Fatty Liveer Disease & Fibrosis Transcriptomics",
-    "section": "3 Where to find things",
-    "text": "3 Where to find things\n\nScripts: scripts/\nData notes: data/README.md\nFigures: figures/\nCitations: references.bib"
+    "title": "Non Alcoholic Fatty Liver Disease & Fibrosis Transcriptomics",
+    "section": "4 Where to find things",
+    "text": "4 Where to find things\n\nScripts: scripts/\nData notes: data/README.md\nFigures: figures/\nCitations: references.bib"
   },
   {
     "objectID": "results.html",
@@ -110,5 +110,19 @@
     "title": "References",
     "section": "",
     "text": "All bibliography entries from references.bib are listed below.\n\n\n\n\nReferences\n\nBioconductor. 2024a. “AnnotationDbi: Manipulation of SQLite-Based Annotation Data.” https://bioconductor.org/packages/release/bioc/html/AnnotationDbi.html.\n\n\n———. 2024b. “Org.hs.eg.db: Genome Wide Annotation for Human.” https://bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html.\n\n\n———. 2024c. “RNA-Seq Gene Expression Analysis Workflow.” https://master.bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html.\n\n\nGarcia, Laura, David Thompson, and Emily Wilson. 2020. “Distinct Hepatic Gene Expression Patterns of NAFLD in Patients with Obesity.” Hepatology 72 (3): 1234–45.\n\n\nGarcia, Maria, Robert Thompson, and David Wilson. 2018. “Microglia in Alzheimer’s Disease: A Role for TREM2.” Cellular and Molecular Life Sciences 75 (24): 4567–80.\n\n\n———. 2021. “Microglia in Alzheimer’s Disease: A Role for TREM2.” Frontiers in Cellular Neuroscience 15: 644690.\n\n\nGEO, NCBI. 2020. “GSE135251: RNA-Seq of Microglia from Alzheimer’s Disease Patients.” https://www.ncbi.nlm.nih.gov/geo/geo2r/?acc=GSE135251.\n\n\nGu, Zuguang, Roland Eils, and Matthias Schlesner. 2024. “clusterProfiler: An r Package for Comparing Biological Themes Among Gene Clusters.” https://bioconductor.org/packages/release/bioc/html/clusterProfiler.html.\n\n\nJohnson, Emily, Michael Lee, and Sarah Davis. 2021. “Microglia in Neurodegenerative Diseases: A Therapeutic Target.” Science Translational Medicine 13 (587): eabi4448.\n\n\nKolde, Raivo. 2024. “Pheatmap: Pretty Heatmaps.” https://www.rdocumentation.org/packages/pheatmap/versions/1.0.13/topics/pheatmap.\n\n\nLove, Michael I., Wolfgang Huber, and Simon Anders. 2019. “DESeq2: Moderated Estimation of Fold Change and Dispersion for RNA-Seq Data with DESeq2.” Bioinformatics 35 (21): 4200–4202.\n\n\nMiller, Jessica, Kevin Anderson, and Laura Martinez. 2016. “Microglia in Parkinson’s Disease: A Focus on Alpha-Synuclein.” Nature Reviews Gastroenterology & Hepatology 13 (11): 678–90.\n\n\n———. 2021. “Microglia in Parkinson’s Disease: A Focus on Alpha-Synuclein.” Frontiers in Neuroscience 15: 644690.\n\n\nSlowkow, Stefan. 2024. “Ggrepel: Automatically Position Non-Overlapping Text Labels with Ggplot2.” https://ggrepel.slowkow.com/.\n\n\nSmith, John, Jane Doe, and Alice Brown. 2024. “A Protocol for the Generation of Human Induced Pluripotent Stem Cell-Derived Microglia-Like Cells.” STAR Protocols 5 (3): 102926.\n\n\nSmith, Robert, Anna Lee, and Mark Johnson. 2022. “Microglial Activation in Aging and Neurodegeneration: A Cross-Sectional Study.” Frontiers in Aging Neuroscience 14: 8985656.\n\n\nWickham, Hadley. 2024a. “Ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics.” https://ggplot2.tidyverse.org/.\n\n\n———. 2024b. “Readxl: Read Excel Files.” https://readxl.tidyverse.org/."
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "Non Alcoholic Fatty Liver Disease & Fibrosis Transcriptomics",
+    "section": "",
+    "text": "Non Alcoholic Liver Disease(NAFLD) is a condition where fat is accumulated in the liver. This disease can cause inflammation, fibrosis, and corrhosis. Fibrosis is characterized by excessive deposition of extracellular matrix (ECM) components, leading to structural and functional disruption of liver tissue. Understanding the molecular mechanisms underlying fibrosis progression is critical for identifying therapeutic targets and biomarkers of disease severity. In this study, we analyzed RNA-sequence data from the GSE135251 dataset. This dataset consists of liver biopsy samples from 216 human patients, classified as control, early, and moderate. We hypothesized that as fibrosis stages increases, expression of genes related to extracellular matrix organization would be increased. To test our hypothesis, the raw counts data was processed using DESeq2 to identify differentially expressed genes between the fibrosis stages. Principal component analysis(PCA) was used to display global Transcriptomic differences and differential expression results were visualized using a volcano plot and heatmap of top significant genes. Gene ontologu enrichment analysis was performedd using clusterProfiler to identify overrepresented biological processes."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Non Alcoholic Fatty Liver Disease & Fibrosis Transcriptomics",
+    "section": "2 Introduction",
+    "text": "2 Introduction\nWrite 4–6 sentences describing: - the problem or question - the dataset(s) - your approach (methods) - what you will deliver (figures, model, dashboard, etc.)"
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Non Alcoholic Fatty Liveer Disease &amp; Fibrosis Transcriptomics – BNFO 420 Capstone</title>
+<title>Non Alcoholic Fatty Liver Disease &amp; Fibrosis Transcriptomics – BNFO 420 Capstone</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -125,9 +125,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#one-paragraph-summary" id="toc-one-paragraph-summary" class="nav-link active" data-scroll-target="#one-paragraph-summary"><span class="header-section-number">1</span> One-paragraph summary</a></li>
-  <li><a href="#project-roadmap-living" id="toc-project-roadmap-living" class="nav-link" data-scroll-target="#project-roadmap-living"><span class="header-section-number">2</span> Project roadmap (living)</a></li>
-  <li><a href="#where-to-find-things" id="toc-where-to-find-things" class="nav-link" data-scroll-target="#where-to-find-things"><span class="header-section-number">3</span> Where to find things</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">1</span> Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a></li>
+  <li><a href="#project-roadmap-living" id="toc-project-roadmap-living" class="nav-link" data-scroll-target="#project-roadmap-living"><span class="header-section-number">3</span> Project roadmap (living)</a></li>
+  <li><a href="#where-to-find-things" id="toc-where-to-find-things" class="nav-link" data-scroll-target="#where-to-find-things"><span class="header-section-number">4</span> Where to find things</a></li>
   </ul>
 </nav>
     </div>
@@ -136,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Non Alcoholic Fatty Liveer Disease &amp; Fibrosis Transcriptomics</h1>
+<h1 class="title">Non Alcoholic Fatty Liver Disease &amp; Fibrosis Transcriptomics</h1>
 <p class="subtitle lead">BNFO 420 Capstone</p>
 </div>
 
@@ -154,15 +155,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="one-paragraph-summary" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="one-paragraph-summary"><span class="header-section-number">1</span> One-paragraph summary</h2>
-<p>As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism? For our project we will be using GSE135251 as our dataset. This dataset comes from human liver biopsies and contains RNA sequence raw counts data. The sample size is 216. We will use DESeq2 for differential expression analysis and clusterProfiler for pathway analysis. Our deliverables include PCA plots, Volcano plot, Heatmaps, and Gene Annotation plot.</p>
+<section id="abstract" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">1</span> Abstract</h2>
+<p>Non Alcoholic Liver Disease(NAFLD) is a condition where fat is accumulated in the liver. This disease can cause inflammation, fibrosis, and corrhosis. Fibrosis is characterized by excessive deposition of extracellular matrix (ECM) components, leading to structural and functional disruption of liver tissue. Understanding the molecular mechanisms underlying fibrosis progression is critical for identifying therapeutic targets and biomarkers of disease severity. In this study, we analyzed RNA-sequence data from the GSE135251 dataset. This dataset consists of liver biopsy samples from 216 human patients, classified as control, early, and moderate. We hypothesized that as fibrosis stages increases, expression of genes related to extracellular matrix organization would be increased. To test our hypothesis, the raw counts data was processed using DESeq2 to identify differentially expressed genes between the fibrosis stages. Principal component analysis(PCA) was used to display global Transcriptomic differences and differential expression results were visualized using a volcano plot and heatmap of top significant genes. Gene ontologu enrichment analysis was performedd using clusterProfiler to identify overrepresented biological processes.</p>
+</section>
+<section id="introduction" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2</span> Introduction</h2>
 <p>Write 4–6 sentences describing: - the problem or question - the dataset(s) - your approach (methods) - what you will deliver (figures, model, dashboard, etc.)</p>
 </section>
-<section id="project-roadmap-living" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="project-roadmap-living"><span class="header-section-number">2</span> Project roadmap (living)</h2>
+<section id="project-roadmap-living" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="project-roadmap-living"><span class="header-section-number">3</span> Project roadmap (living)</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">Find dataset(s)</label></li>
+<li><label><input type="checkbox">Our dataset: GEO GSE135251</label></li>
 <li><label><input type="checkbox">Define outcome + predictors / variables</label></li>
 <li><label><input type="checkbox">Exploratory analysis + QC</label></li>
 <li><label><input type="checkbox">Method 1 (required)</label></li>
@@ -171,8 +175,8 @@ ul.task-list li input[type="checkbox"] {
 <li><label><input type="checkbox">Limitations + ethics + reproducibility notes</label></li>
 </ul>
 </section>
-<section id="where-to-find-things" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="where-to-find-things"><span class="header-section-number">3</span> Where to find things</h2>
+<section id="where-to-find-things" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="where-to-find-things"><span class="header-section-number">4</span> Where to find things</h2>
 <ul>
 <li><strong>Scripts:</strong> <code>scripts/</code></li>
 <li><strong>Data notes:</strong> <code>data/README.md</code></li>

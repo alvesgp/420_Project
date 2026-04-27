@@ -1,12 +1,28 @@
 ---
-title: "Non Alcoholic Fatty Liveer Disease & Fibrosis Transcriptomics"
+title: "Non Alcoholic Fatty Liver Disease & Fibrosis Transcriptomics"
 subtitle: "BNFO 420 Capstone"
 ---
 
-## One-paragraph summary
-As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism?
-For our project we will be using GSE135251 as our dataset. This dataset comes from human liver biopsies and contains RNA sequence raw counts data. The sample size is 216.
-We will use DESeq2 for differential expression analysis and clusterProfiler for pathway analysis. Our deliverables include PCA plots, Volcano plot, Heatmaps, and Gene Annotation plot. 
+## Abstract 
+Non Alcoholic Liver Disease(NAFLD) is a condition where fat is accumulated in the
+liver. This disease can cause inflammation, fibrosis, and corrhosis. Fibrosis is 
+characterized by excessive deposition of extracellular matrix (ECM) components, 
+leading to structural and functional disruption of liver tissue. Understanding 
+the molecular mechanisms underlying fibrosis progression is critical for identifying
+therapeutic targets and biomarkers of disease severity. In this study, we analyzed 
+RNA-sequence data from the GSE135251 dataset. This dataset consists of liver biopsy 
+samples from 216 human patients, classified as control, early, and moderate. We 
+hypothesized that as fibrosis stages increases, expression of genes related to 
+extracellular matrix organization would be increased. To test our hypothesis, the 
+raw counts data was processed using DESeq2 to identify differentially expressed genes 
+between the fibrosis stages. Principal component analysis(PCA) was used to display 
+global Transcriptomic differences and differential expression results were visualized 
+using a volcano plot and heatmap of top significant genes. Gene ontologu enrichment analysis
+was performedd using clusterProfiler to identify overrepresented biological processes.
+
+
+## Introduction
+
 
 Write 4–6 sentences describing:
 - the problem or question
@@ -15,7 +31,7 @@ Write 4–6 sentences describing:
 - what you will deliver (figures, model, dashboard, etc.)
 
 ## Project roadmap (living)
-- [ ] Find dataset(s)
+- [ ] Our dataset: GEO GSE135251
 - [ ] Define outcome + predictors / variables
 - [ ] Exploratory analysis + QC
 - [ ] Method 1 (required)
