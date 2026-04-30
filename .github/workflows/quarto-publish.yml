@@ -31,6 +31,3 @@ jobs:
 
       - name: Render Quarto site
         run: quarto render
-
-      - name: Publish to docs/ (GitHub Pages)
-        run: quarto render
