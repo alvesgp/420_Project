@@ -8,7 +8,8 @@ Add bullet points as you go.
 ## Figures
 Add figures as you generate them. Example:
 
-![](figures/PCA%20Liver.png)
+
+![](figures/PCA%20Liver.png){#fig-pca fig-cap="Principal component analysis..."}
 ![](figures/Volcano%20Plot.png)
 ![](figures/Heatmap.png)
 ![](figures/top50_downregulated.png)

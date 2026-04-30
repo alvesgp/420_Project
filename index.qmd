@@ -4,24 +4,28 @@ subtitle: "BNFO 420 Capstone"
 ---
 
 ## Abstract 
- Non Alcoholic Liver Disease(NAFLD) is a condition where fat is accumulated in the liver.
- This disease can cause inflammation, fibrosis, and cirrhosis. 
- Fibrosis is characterized by excessive deposition of extracellular matrix (ECM) components, 
- leading to structural and functional disruption of liver tissue. Understanding the molecular 
- mechanisms underlying fibrosis progression is critical for identifying therapeutic targets and 
- biomarkers of disease severity. In this study, we analyzed RNA-sequence data from the GSE135251 
- dataset. This dataset consists of liver biopsy samples from 216 human patients, classified as 
- control, early, and moderate. We hypothesized that as fibrosis stages increase, expression of 
- genes related to extracellular matrix organization would be increased. To test this hypothesis, 
- the raw counts data was processed using DESeq2 to identify differentially expressed genes between 
- early and moderate fibrosis. Principal component analysis (PCA) was used to assess global Transcriptomic
-  differences across the samples. Differential expression results were visualized using a volcano plot and 
-  heatmap of top significant genes. Gene Ontology (GO) enrichment analysis was performed using clusterProfiler 
-  to identify overrepresented biological processes. Our analysis revealed distinct transcriptomic differences 
-  between control and fibrosis samples, with more subtle differences found between early and moderate stages. 
-  Pathway enrichment analysis revealed significant upregulation of genes associated with extracellular matrix 
-  organization in moderate fibrosis. These findings support the hypothesis that fibrosis progression has a linear 
-  relationship with increased ECM gene expression.
+ Nonalcoholic fatty liver disease (NAFLD) is a condition in which excess fat accumulates in the liver 
+ and can progress to more severe stages such as inflammation, fibrosis, and cirrhosis. Fibrosis is 
+ characterized by the excessive buildup of extracellular matrix (ECM) components, which disrupts the 
+ normal structure and function of liver tissue. As fibrosis worsens, these structural changes can 
+ significantly impair liver function. Because of this, understanding the molecular changes that occur 
+ during fibrosis progression is important for identifying potential biomarkers and therapeutic targets.
+In this study, we analyzed RNA-seq data from the GSE135251 dataset, which contains liver biopsy samples 
+from 216 human patients. These samples were classified into three groups: control, early fibrosis, and 
+moderate fibrosis. We hypothesized that as the fibrosis stage increases, the expression of genes involved 
+in extracellular matrix organization would also increase. To test this, raw count data were processed using 
+DESeq2 to identify differentially expressed genes between early and moderate fibrosis samples. Principal 
+component analysis (PCA) was used to examine overall transcriptomic differences across all samples and to 
+see how the groups clustered. The results of the differential expression analysis were visualized using a 
+volcano plot, which highlights significantly upregulated and downregulated genes, and a heatmap showing the 
+expression patterns of the most significant genes. In addition, Gene Ontology (GO) enrichment analysis was 
+performed using clusterProfiler to identify biological processes that were overrepresented among the 
+differentially expressed genes. Our results showed clear transcriptomic differences between control and fibrosis
+ samples, while differences between early and moderate fibrosis were present but less pronounced. GO enrichment 
+ analysis revealed that genes associated with extracellular matrix organization were significantly upregulated 
+ in moderate fibrosis. These findings support our hypothesis and suggest that fibrosis progression is associated 
+ with increased expression of ECM-related genes, which may play a key role in disease severity.
+
 
 
 ## Introduction

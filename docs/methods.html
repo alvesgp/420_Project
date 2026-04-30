@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Results – BNFO 420 Capstone</title>
+<title>Methods – BNFO 420 Capstone</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Proposal</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./results.html" aria-current="page"> 
+    <a class="nav-link" href="./results.html"> 
 <span class="menu-text">Results</span></a>
   </li>  
   <li class="nav-item">
@@ -125,10 +125,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#key-findings-draft" id="toc-key-findings-draft" class="nav-link active" data-scroll-target="#key-findings-draft"><span class="header-section-number">0.1</span> Key findings (draft)</a></li>
-  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="header-section-number">0.2</span> Figures</a></li>
-  <li><a href="#if-using-r-put-code-here-optional" id="toc-if-using-r-put-code-here-optional" class="nav-link" data-scroll-target="#if-using-r-put-code-here-optional"><span class="header-section-number">1</span> If using R, put code here (optional)</a></li>
-  <li><a href="#if-using-python-put-code-here-optional" id="toc-if-using-python-put-code-here-optional" class="nav-link" data-scroll-target="#if-using-python-put-code-here-optional"><span class="header-section-number">2</span> If using Python, put code here (optional)</a></li>
+  <li><a href="#methods-pipeline" id="toc-methods-pipeline" class="nav-link active" data-scroll-target="#methods-pipeline"><span class="header-section-number">1</span> Methods Pipeline</a>
+  <ul class="collapse">
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data"><span class="header-section-number">1.1</span> Data</a></li>
+  <li><a href="#matched-samples-cleaning" id="toc-matched-samples-cleaning" class="nav-link" data-scroll-target="#matched-samples-cleaning"><span class="header-section-number">1.2</span> Matched Samples/ Cleaning</a></li>
+  <li><a href="#differential-expression-analysis" id="toc-differential-expression-analysis" class="nav-link" data-scroll-target="#differential-expression-analysis"><span class="header-section-number">1.3</span> Differential Expression Analysis</a></li>
+  <li><a href="#visualization-and-data" id="toc-visualization-and-data" class="nav-link" data-scroll-target="#visualization-and-data"><span class="header-section-number">1.4</span> Visualization and Data</a></li>
+  </ul></li>
+  <li><a href="#pathway-enrichment-analysis" id="toc-pathway-enrichment-analysis" class="nav-link" data-scroll-target="#pathway-enrichment-analysis"><span class="header-section-number">2</span> Pathway Enrichment Analysis</a></li>
   </ul>
 </nav>
     </div>
@@ -137,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Results</h1>
+<h1 class="title">Methods</h1>
 </div>
 
 
@@ -154,20 +158,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="key-findings-draft" class="level2" data-number="0.1">
-<h2 data-number="0.1" class="anchored" data-anchor-id="key-findings-draft"><span class="header-section-number">0.1</span> Key findings (draft)</h2>
-<p>Add bullet points as you go.</p>
+<section id="methods-pipeline" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="methods-pipeline"><span class="header-section-number">1</span> Methods Pipeline</h2>
+<p><img src="figures/Pipeline.png" class="img-fluid"></p>
+<section id="data" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="data"><span class="header-section-number">1.1</span> Data</h3>
+<p>RNA-sequencing data were obtained from the publicly available dataset GSE135251, originally published in Transcriptomic signatures of fibrosis progression in nonalcoholic fatty liver disease. The dataset includes liver biopsy samples spanning multiple stages of Nonalcoholic Fatty Liver Disease progression. In the original study, fibrosis was categorized into five stages (F0–F4). For this analysis, fibrosis stages were consolidated into three biologically meaningful groups to improve statistical power and simplify interpretation: Control (F0): no fibrosis (n = 8) Early fibrosis (F1–F2): mild disease (n = 138) Moderate/advanced fibrosis (F3–F4): severe disease (n = 68) This increased the sample size within each category and allowed for a better detection of gene expression differences associated with fibrosis progression.</p>
 </section>
-<section id="figures" class="level2" data-number="0.2">
-<h2 data-number="0.2" class="anchored" data-anchor-id="figures"><span class="header-section-number">0.2</span> Figures</h2>
-<p>Add figures as you generate them. Example:</p>
-<p><img src="figures/Pipeline.png" class="img-fluid"> <img src="figures/PCA Liver.png" id="fig-pca" class="img-fluid" data-fig-cap="Principal component analysis..."> <img src="figures/Volcano Plot.png" class="img-fluid"> <img src="figures/Heatmap.png" class="img-fluid"> <img src="figures/top50_downregulated.png" class="img-fluid"> <img src="figures/top50_upregulated.png" class="img-fluid"> <img src="figures/Upregulated Pathways.png" class="img-fluid"> <img src="figures/Downregulated Pathways.png" class="img-fluid"></p>
+<section id="matched-samples-cleaning" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="matched-samples-cleaning"><span class="header-section-number">1.2</span> Matched Samples/ Cleaning</h3>
+<p>Raw RNA-seq count data were imported into R and processed using standard workflows. Sample metadata were matched to expression data to ensure correct alignment of fibrosis stage labels with sequencing samples.In addition to regrouping fibrosis stages into three categories (control, early, and moderate), we refined the dataset by excluding samples that lacked clear fibrosis stage annotations or had incomplete metadata, and we standardized gene identifiers to ensure compatibility with downstream enrichment tools. This step ensured consistency between expression data and clinical grouping while maintaining data quality.</p>
 </section>
-<section id="if-using-r-put-code-here-optional" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> If using R, put code here (optional)</h1>
+<section id="differential-expression-analysis" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="differential-expression-analysis"><span class="header-section-number">1.3</span> Differential Expression Analysis</h3>
+<p>Differential gene expression analysis was performed using DESeq2, a method specifically designed for count-based RNA-seq data. DESeq2 models count data using a negative binomial distribution and apply normalization to account for sequencing depth and dispersion. Comparisons were conducted between fibrosis groups to identify genes whose expression changes with disease progression. Genes with statistically significant adjusted p-values were considered differentially expressed.</p>
 </section>
-<section id="if-using-python-put-code-here-optional" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> If using Python, put code here (optional)</h1>
+<section id="visualization-and-data" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="visualization-and-data"><span class="header-section-number">1.4</span> Visualization and Data</h3>
+<p>To assess data structure and results, multiple visualization techniques were used: - Principal Component Analysis (PCA) to evaluate sample clustering by fibrosis stage - Volcano plots to display significance versus magnitude of gene expression changes - Heatmaps to visualize expression patterns of key genes across samples These visualizations supported interpretation of both global transcriptomic variation and pathway-specific trends.</p>
+</section>
+</section>
+<section id="pathway-enrichment-analysis" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="pathway-enrichment-analysis"><span class="header-section-number">2</span> Pathway Enrichment Analysis</h2>
+<p>To interpret gene-level changes in a biological context, pathway enrichment analysis was performed using clusterProfiler. This tool identifies overrepresented biological pathways among differentially expressed genes. Analyses focused on pathways relevant to NAFLD progression, including extracellular matrix (ECM) organization, inflammation, lipid metabolism, and insulin resistance.</p>
 
 
 </section>
