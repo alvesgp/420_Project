@@ -16,6 +16,8 @@ website:
         text: Methods
       - href: results.qmd
         text: Results
+      - href: conclusions.qmd
+        text: Conclusions
       - href: references.qmd
         text: References
       - href: team.qmd

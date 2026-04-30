@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Proposal – BNFO 420 Capstone</title>
+<title>Conclusions – BNFO 420 Capstone</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./proposal.html" aria-current="page"> 
+    <a class="nav-link" href="./proposal.html"> 
 <span class="menu-text">Proposal</span></a>
   </li>  
   <li class="nav-item">
@@ -106,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Results</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./conclusions.html"> 
+    <a class="nav-link active" href="./conclusions.html" aria-current="page"> 
 <span class="menu-text">Conclusions</span></a>
   </li>  
   <li class="nav-item">
@@ -133,10 +133,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question"><span class="header-section-number">1</span> Research question</a></li>
-  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets"><span class="header-section-number">2</span> Dataset(s)</a></li>
-  <li><a href="#planned-analysis" id="toc-planned-analysis" class="nav-link" data-scroll-target="#planned-analysis"><span class="header-section-number">3</span> Planned analysis</a></li>
-  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">4</span> Deliverables</a></li>
+  <li><a href="#discussionsynthesis" id="toc-discussionsynthesis" class="nav-link active" data-scroll-target="#discussionsynthesis"><span class="header-section-number">1</span> Discussion/Synthesis</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations"><span class="header-section-number">2</span> Limitations</a></li>
+  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions"><span class="header-section-number">3</span> Future Directions</a></li>
   </ul>
 </nav>
     </div>
@@ -145,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Proposal</h1>
+<h1 class="title">Conclusions</h1>
 </div>
 
 
@@ -162,31 +161,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="research-question" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="research-question"><span class="header-section-number">1</span> Research question</h2>
-<p>As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism?</p>
-<p>State your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate…</p>
+<section id="discussionsynthesis" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="discussionsynthesis"><span class="header-section-number">1</span> Discussion/Synthesis</h2>
 </section>
-<section id="datasets" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="datasets"><span class="header-section-number">2</span> Dataset(s)</h2>
-<ul>
-<li><p>Source: GSE135251 (GEO)</p></li>
-<li><p>Sample size:216 patients</p></li>
-<li><p>Key variables: Early - fibrosis (F0–F1) - Advanced fibrosis (F3–F4)</p></li>
-<li><p>License/usage notes:</p></li>
-</ul>
+<section id="limitations" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="limitations"><span class="header-section-number">2</span> Limitations</h2>
+<p>There are several limitations to be considered when interpreting the results of the data. First, even though the sample size is relatively large, the general grouping of fibrosis stages as early and moderate may have masked some subtle, specific changes within each specific fibrosis stage. Second, the metadata given in the original dataset did not specify the different cell types used in the samples, which can change how each different gene was expressed and how the changes were driven. There was also the possibility of misleading results from the pathway enrichments. As pathway enrichment relies on preexisting gene annotations, some of the annotated functions have no biological relevance to livers due to overlapping genes in databases. Even though some statistical thresholds were applied, the small effects that are biologically meaningful may have been overlooked due to these limitations.</p>
 </section>
-<section id="planned-analysis" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="planned-analysis"><span class="header-section-number">3</span> Planned analysis</h2>
-<p>Describe your plan in bullets: - Cleaning/QC - Visualizations - Statistical/ML approach - How you’ll validate (train/test, CV, sensitivity checks, etc.)</p>
-</section>
-<section id="deliverables" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">4</span> Deliverables</h2>
-<ul>
-<li>Website sections</li>
-<li>Key figures/tables</li>
-<li>Any optional stretch goals</li>
-</ul>
+<section id="future-directions" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="future-directions"><span class="header-section-number">3</span> Future Directions</h2>
+<p>Future studies can build their analyses by following patients over a period of time, which could provide stronger evidence for gene relationships to fibrosis progression. More specific investigation of inflammation and insulin resistance pathways can also help with creating databases with more clarity and specificity in order to have a more successful and precise pathway enrichment analysis. The addition of understanding other functional changes in the liver can help find factors that relate to these changes. Understanding the differentially depressed genes can also help identify new therapies for fibrosis progression.</p>
 
 
 </section>
