@@ -135,12 +135,13 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">1</span> Abstract</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a></li>
-  <li><a href="#project-roadmap-living" id="toc-project-roadmap-living" class="nav-link" data-scroll-target="#project-roadmap-living"><span class="header-section-number">3</span> Project roadmap (living)</a>
+  <li><a href="#project-roadmap-living" id="toc-project-roadmap-living" class="nav-link" data-scroll-target="#project-roadmap-living"><span class="header-section-number">3</span> Project Roadmap (living)</a>
   <ul class="collapse">
-  <li><a href="#method-1" id="toc-method-1" class="nav-link" data-scroll-target="#method-1"><span class="header-section-number">3.1</span> Method 1</a></li>
-  <li><a href="#method-2" id="toc-method-2" class="nav-link" data-scroll-target="#method-2"><span class="header-section-number">3.2</span> Method 2</a></li>
-  <li><a href="#final-figures-interpretation" id="toc-final-figures-interpretation" class="nav-link" data-scroll-target="#final-figures-interpretation"><span class="header-section-number">3.3</span> Final figures + interpretation</a></li>
-  <li><a href="#limitations-ethics-reproducibility-notes" id="toc-limitations-ethics-reproducibility-notes" class="nav-link" data-scroll-target="#limitations-ethics-reproducibility-notes"><span class="header-section-number">3.4</span> Limitations + ethics + reproducibility notes</a></li>
+  <li><a href="#exploratory-analysis-qc" id="toc-exploratory-analysis-qc" class="nav-link" data-scroll-target="#exploratory-analysis-qc"><span class="header-section-number">3.1</span> Exploratory Analysis + QC</a></li>
+  <li><a href="#method-1" id="toc-method-1" class="nav-link" data-scroll-target="#method-1"><span class="header-section-number">3.2</span> Method 1</a></li>
+  <li><a href="#method-2" id="toc-method-2" class="nav-link" data-scroll-target="#method-2"><span class="header-section-number">3.3</span> Method 2</a></li>
+  <li><a href="#final-figures-interpretation" id="toc-final-figures-interpretation" class="nav-link" data-scroll-target="#final-figures-interpretation"><span class="header-section-number">3.4</span> Final figures + Interpretation</a></li>
+  <li><a href="#limitations-ethics-reproducibility-notes" id="toc-limitations-ethics-reproducibility-notes" class="nav-link" data-scroll-target="#limitations-ethics-reproducibility-notes"><span class="header-section-number">3.5</span> Limitations + Ethics + Reproducibility Notes</a></li>
   </ul></li>
   <li><a href="#where-to-find-things" id="toc-where-to-find-things" class="nav-link" data-scroll-target="#where-to-find-things"><span class="header-section-number">4</span> Where to find things</a></li>
   </ul>
@@ -184,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Publicly available datasets provide valuable opportunities to study NAFLD using real patient samples. The GSE135251 dataset includes liver biopsy samples across different fibrosis stages and has been widely used to study gene expression changes in NAFLD (<a href="https://www.science.org/doi/10.1126/scitranslmed.aba4448">Govaere et al., 2020</a>). Previous studies using this dataset have shown that fibrosis progression is associated with increased expression of genes involved in extracellular matrix organization and tissue remodeling (<a href="https://www.science.org/doi/10.1126/scitranslmed.aba4448">Govaere et al., 2020</a>). These findings suggest that ECM plays a key role in fibrosis progression and highlight the importance of studying these pathways.</p>
 </section>
 <section id="project-roadmap-living" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="project-roadmap-living"><span class="header-section-number">3</span> Project roadmap (living)</h2>
+<h2 data-number="3" class="anchored" data-anchor-id="project-roadmap-living"><span class="header-section-number">3</span> Project Roadmap (living)</h2>
 <ul class="task-list">
 <li><label><input type="checkbox">Public dataset: GEO GSE135251</label></li>
 <li><label><input type="checkbox">Organism: Human</label></li>
@@ -193,26 +194,34 @@ ul.task-list li input[type="checkbox"] {
 <li><label><input type="checkbox">Sample size: 216 patients</label></li>
 <li><label><input type="checkbox">Variables: Early (Fibrosis Stage: 1-2), Moderate(Fibrosis Stage: 3-4), Control(Fibrosis Stage: 0)</label></li>
 </ul>
-<section id="method-1" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="method-1"><span class="header-section-number">3.1</span> Method 1</h3>
+<section id="exploratory-analysis-qc" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="exploratory-analysis-qc"><span class="header-section-number">3.1</span> Exploratory Analysis + QC</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">Check and align metadata with count data</label></li>
 <li><label><input type="checkbox">Remove low-count genes</label></li>
+<li><label><input type="checkbox">Normalize data using DESeq2</label></li>
+<li><label><input type="checkbox">Perform PCA to check clustering and variation</label></li>
+<li><label><input type="checkbox">Identify any outliers or batch effects</label></li>
+</ul>
+</section>
+<section id="method-1" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="method-1"><span class="header-section-number">3.2</span> Method 1</h3>
+<ul class="task-list">
 <li><label><input type="checkbox">Differential gene expression analysis using DESeq2</label></li>
 <li><label><input type="checkbox">Compare early vs.&nbsp;moderate fibrosis</label></li>
 <li><label><input type="checkbox">Identify significantly upregulated and downregulated genes</label></li>
 </ul>
 </section>
-<section id="method-2" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="method-2"><span class="header-section-number">3.2</span> Method 2</h3>
+<section id="method-2" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="method-2"><span class="header-section-number">3.3</span> Method 2</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">Gene Ontology (GO) enrichment analysis using clusterProfiler</label></li>
 <li><label><input type="checkbox">Identify biological pathways (especially ECM-related pathways)</label></li>
 <li><label><input type="checkbox">Optional: visualize pathway results using dot plots</label></li>
 </ul>
 </section>
-<section id="final-figures-interpretation" class="level3" data-number="3.3">
-<h3 data-number="3.3" class="anchored" data-anchor-id="final-figures-interpretation"><span class="header-section-number">3.3</span> Final figures + interpretation</h3>
+<section id="final-figures-interpretation" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="final-figures-interpretation"><span class="header-section-number">3.4</span> Final figures + Interpretation</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">PCA plot (sample clustering)</label></li>
 <li><label><input type="checkbox">Volcano plot (significant gene changes)</label></li>
@@ -223,8 +232,8 @@ ul.task-list li input[type="checkbox"] {
 <li><label><input type="checkbox">Focus on ECM and tissue remodeling</label></li>
 </ul>
 </section>
-<section id="limitations-ethics-reproducibility-notes" class="level3" data-number="3.4">
-<h3 data-number="3.4" class="anchored" data-anchor-id="limitations-ethics-reproducibility-notes"><span class="header-section-number">3.4</span> Limitations + ethics + reproducibility notes</h3>
+<section id="limitations-ethics-reproducibility-notes" class="level3" data-number="3.5">
+<h3 data-number="3.5" class="anchored" data-anchor-id="limitations-ethics-reproducibility-notes"><span class="header-section-number">3.5</span> Limitations + Ethics + Reproducibility Notes</h3>
 <ul class="task-list">
 <li><label><input type="checkbox">Bulk RNA-seq includes mixed cell types</label></li>
 <li><label><input type="checkbox">Patient variation may affect results</label></li>

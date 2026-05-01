@@ -7,9 +7,3 @@ title: "Team"
 - Prakriti Dhungana — writing, researcher, editor
 - Adeline John — writing, researcher, editor 
 - Kyubin Oh — writing, researcher, editor
-
-## Collaboration rules (simple)
-- Pull before you start work.
-- Commit small changes with clear messages.
-- Only one person edits the *same* `.qmd` file at a time.
-- Use Issues (optional) for tasks/bugs.
