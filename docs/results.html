@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Results – BNFO 420 Capstone</title>
+<title>results – BNFO 420 Capstone</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -128,14 +163,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#if-using-r-put-code-here-optional" id="toc-if-using-r-put-code-here-optional" class="nav-link active" data-scroll-target="#if-using-r-put-code-here-optional"><span class="header-section-number">1</span> If using R, put code here (optional)</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -167,11 +196,11 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="figures/top50_upregulated.png" class="img-fluid"> The bar graph shows the top 50 upregulated genes in the early and moderate fibrosis stages. The x-axis represents a log2 fold change, and the y-axis has the list of all the genes. There is an indication of increased fibrosis expression due to the positive changes in the log2 fold change values. Some genes show greater changes, suggesting a stronger upregulation of those specific functions. Many of these genes are associated with ECM organization, structural remodeling, and fibrosis progression. Most of the genes have similar fold changes, indicating a coordinated increase in fibrosis expression among the upregulated genes. Overall, this analysis supports the pattern of fibrosis progression via widespread activation of genes involved in remodeling and organization.</p>
 <p><img src="figures/Upregulated Pathways.png" class="img-fluid"> The pathway dot plot displays the top 50 upregulated biological pathways, where color indicates statistical significance, with red showing more significant pathways and blue indicating less significant ones. Overall, the plot shows a relatively even distribution of gene involvement across multiple pathways, with a few pathways standing out more strongly than others. The most prominent and statistically significant pathway is epidermis development, indicating strong activation of genes involved in tissue growth, repair, and structural remodeling. Other enriched pathways, such as extracellular matrix organization, extracellular structure organization, and external encapsulating structure organization, further support the idea that tissue remodeling processes are highly active. Additionally, pathways related to muscle contraction and epithelial differentiation suggest broader changes in tissue function and structural integrity during fibrosis progression. The variation in circle sizes shows that some pathways involve more genes than others, but most remain consistently represented, suggesting coordinated biological activity rather than a single dominant process. Overall, this analysis indicates that upregulated genes in fibrosis are strongly associated with tissue development and extracellular matrix remodeling, supporting increased structural reorganization as fibrosis progresses.</p>
 <p><img src="figures/Downregulated Pathways.png" class="img-fluid"> The downregulated pathway analysis indicates that several biological processes decrease in activity as fibrosis progresses in NAFLD. Notably, the most statistically significant pathways, shown in red, such as phototransduction and detection of light stimulus, suggest a reduction in sensory and signaling-related gene expression. Although these pathways are not traditionally central to liver function, their suppression may reflect broader disruptions in cellular communication and normal physiological activity within the liver. Additional pathways related to stimulus detection and digestion also show decreased expression, further supporting a decline in typical metabolic and signaling functions. This overall pattern suggests that as fibrosis advances, the liver shifts away from maintaining normal homeostatic processes. In contrast to these downregulated pathways, our hypothesis predicted that genes involved in extracellular matrix (ECM) organization would increase with fibrosis progression. Together, these findings support our hypothesis by showing that while normal liver functions are suppressed, resources may be redirected toward ECM remodeling and fibrotic tissue development.</p>
-<section id="if-using-r-put-code-here-optional" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> If using R, put code here (optional)</h1>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># If using R, put code here (optional)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
