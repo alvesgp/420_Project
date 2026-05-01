@@ -133,9 +133,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question"><span class="header-section-number">1</span> Research question</a></li>
-  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets"><span class="header-section-number">2</span> Dataset(s)</a></li>
-  <li><a href="#planned-analysis" id="toc-planned-analysis" class="nav-link" data-scroll-target="#planned-analysis"><span class="header-section-number">3</span> Planned analysis</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question"><span class="header-section-number">1</span> Research Question</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset"><span class="header-section-number">2</span> Dataset</a></li>
+  <li><a href="#planned-analysis" id="toc-planned-analysis" class="nav-link" data-scroll-target="#planned-analysis"><span class="header-section-number">3</span> Planned Analysis</a></li>
   <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">4</span> Deliverables</a></li>
   </ul>
 </nav>
@@ -163,29 +163,45 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="research-question" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="research-question"><span class="header-section-number">1</span> Research question</h2>
-<p>As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism?</p>
-<p>State your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate…</p>
+<h2 data-number="1" class="anchored" data-anchor-id="research-question"><span class="header-section-number">1</span> Research Question</h2>
+<p>As NAFLD fibrosis stage increases, do liver gene expression patterns show increased extracellular matrix organization and tissue remodeling?</p>
 </section>
-<section id="datasets" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="datasets"><span class="header-section-number">2</span> Dataset(s)</h2>
+<section id="dataset" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="dataset"><span class="header-section-number">2</span> Dataset</h2>
 <ul>
-<li><p>Source: GSE135251 (GEO)</p></li>
-<li><p>Sample size:216 patients</p></li>
-<li><p>Key variables: Early - fibrosis (F0–F1) - Advanced fibrosis (F3–F4)</p></li>
-<li><p>License/usage notes:</p></li>
+<li>Public dataset: GEO GSE135251</li>
+<li>Organism: Human</li>
+<li>Tissue: Liver biopsy</li>
+<li>Data type: RNA-seq raw counts</li>
+<li>Sample size: 216 patients</li>
 </ul>
 </section>
 <section id="planned-analysis" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="planned-analysis"><span class="header-section-number">3</span> Planned analysis</h2>
-<p>Describe your plan in bullets: - Cleaning/QC - Visualizations - Statistical/ML approach - How you’ll validate (train/test, CV, sensitivity checks, etc.)</p>
+<h2 data-number="3" class="anchored" data-anchor-id="planned-analysis"><span class="header-section-number">3</span> Planned Analysis</h2>
+<ul>
+<li>Clean and match metadata with raw count data</li>
+<li>Filter low-count genes</li>
+<li>Normalize RNA-seq counts using DESeq2</li>
+<li>Perform exploratory analysis and quality control</li>
+<li>Use PCA to examine sample clustering by fibrosis stage</li>
+<li>Perform differential expression analysis between fibrosis groups</li>
+<li>Visualize results using: - PCA plot - Volcano plot - Heatmap - Top upregulated and downregulated gene plots</li>
+<li>Perform Gene Ontology enrichment analysis using clusterProfiler</li>
+<li>Interpret whether ECM-related genes and pathways increase with fibrosis stage</li>
+</ul>
 </section>
 <section id="deliverables" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="deliverables"><span class="header-section-number">4</span> Deliverables</h2>
 <ul>
-<li>Website sections</li>
-<li>Key figures/tables</li>
-<li>Any optional stretch goals</li>
+<li>Quarto website</li>
+<li>Abstract</li>
+<li>Introduction with citations</li>
+<li>Methods and pipeline diagram</li>
+<li>Results section with figures and interpretations</li>
+<li>Discussion and synthesis</li>
+<li>Limitations</li>
+<li>Future work</li>
+<li>References/bibliography</li>
 </ul>
 
 

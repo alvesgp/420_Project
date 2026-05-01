@@ -2,29 +2,41 @@
 title: "Proposal"
 ---
 
-## Research question
-As NAFLD fibrosis stage increases, do liver gene expression patterns shift toward increased inflammation and insulin resistance and decreased lipid metabolism?
+## Research Question
+As NAFLD fibrosis stage increases, do liver gene expression patterns show increased extracellular matrix organization and tissue remodeling?
 
-State your main question in 1–2 sentences. We are just using plain text here. For example Alcohol-associated liver disease is influenced by both genetic and
-environmental factors. In this project, we analyze publicly available transcriptomic data to evaluate...
+## Dataset
+- Public dataset: GEO GSE135251
+- Organism: Human
+- Tissue: Liver biopsy
+- Data type: RNA-seq raw counts
+- Sample size: 216 patients
 
-## Dataset(s)
-- Source: GSE135251 (GEO)
-- Sample size:216 patients
-- Key variables: Early 
-        - fibrosis (F0–F1)
-        - Advanced fibrosis (F3–F4)
 
-- License/usage notes:
+## Planned Analysis
+- Clean and match metadata with raw count data
+- Filter low-count genes
+- Normalize RNA-seq counts using DESeq2
+- Perform exploratory analysis and quality control
+- Use PCA to examine sample clustering by fibrosis stage
+- Perform differential expression analysis between fibrosis groups
+- Visualize results using:
+        - PCA plot
+        - Volcano plot
+        - Heatmap
+        - Top upregulated and downregulated gene plots
+- Perform Gene Ontology enrichment analysis using clusterProfiler
+- Interpret whether ECM-related genes and pathways increase with fibrosis stage
 
-## Planned analysis
-Describe your plan in bullets:
-- Cleaning/QC
-- Visualizations
-- Statistical/ML approach
-- How you’ll validate (train/test, CV, sensitivity checks, etc.)
 
 ## Deliverables
-- Website sections
-- Key figures/tables
-- Any optional stretch goals
+- Quarto website
+- Abstract
+- Introduction with citations
+- Methods and pipeline diagram
+- Results section with figures and interpretations
+- Discussion and synthesis
+- Limitations
+- Future work
+- References/bibliography
+
