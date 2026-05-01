@@ -39,7 +39,7 @@
     "href": "proposal.html#dataset",
     "title": "Proposal",
     "section": "2 Dataset",
-    "text": "2 Dataset\n\nPublic dataset: GEO GSE135251\nOrganism: Human\nTissue: Liver biopsy\nData type: RNA-seq raw counts\nSample size: 216 patients"
+    "text": "2 Dataset\n\nPublic dataset: GEO GSE135251\nOrganism: Human\nTissue: Liver biopsy\nData type: RNA-seq raw counts\nSample size: 216 patients\nVariables: Early (Fibrosis Stage: 1-2), Moderate(Fibrosis Stage: 3-4), Control(Fibrosis Stage: 0)"
   },
   {
     "objectID": "proposal.html#planned-analysis",

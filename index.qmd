@@ -46,13 +46,7 @@ Transcriptomic profiling provides a way to study these changes in detail. RNA se
 Publicly available datasets provide valuable opportunities to study NAFLD using real patient samples. The GSE135251 dataset includes liver biopsy samples across different fibrosis stages and has been widely used to study gene expression changes in NAFLD ([Govaere et al., 2020](https://www.science.org/doi/10.1126/scitranslmed.aba4448)). Previous studies using this dataset have shown that fibrosis progression is associated with increased expression of genes involved in extracellular matrix organization and tissue remodeling ([Govaere et al., 2020](https://www.science.org/doi/10.1126/scitranslmed.aba4448)). These findings suggest that ECM plays a key role in fibrosis progression and highlight the importance of studying these pathways.
 
 
-## Project Roadmap (living)
-- [ ] Public dataset: GEO GSE135251
-- [ ] Organism: Human
-- [ ] Tissue: Liver biopsy
-- [ ] Data type: RNA-seq raw counts
-- [ ] Sample size: 216 patients
-- [ ] Variables: Early (Fibrosis Stage: 1-2), Moderate(Fibrosis Stage: 3-4), Control(Fibrosis Stage: 0)
+## Project Roadmap
 
 ### Exploratory Analysis + QC
 - [ ] Check and align metadata with count data

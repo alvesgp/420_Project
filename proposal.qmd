@@ -11,7 +11,7 @@ As NAFLD fibrosis stage increases, do liver gene expression patterns show increa
 - Tissue: Liver biopsy
 - Data type: RNA-seq raw counts
 - Sample size: 216 patients
-
+- Variables: Early (Fibrosis Stage: 1-2), Moderate(Fibrosis Stage: 3-4), Control(Fibrosis Stage: 0)
 
 ## Planned Analysis
 - Clean and match metadata with raw count data
