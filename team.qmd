@@ -3,7 +3,7 @@ title: "Team"
 ---
 
 ## Members
-- Giovanna Alves — data cleaning, EDA, modeling, writing
+- Giovanna Alves — data cleaning, EDA, coding, modeling, writing
 - Prakriti Dhungana — writing, researcher, editor
 - Adeline John — writing, researcher, editor 
 - Kyubin Oh — writing, researcher, editor
